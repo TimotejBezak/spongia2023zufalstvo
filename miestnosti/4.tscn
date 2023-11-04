@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf8lhjc857ib0"]
+
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_tm6jm"]
+[ext_resource type="PackedScene" uid="uid://borw4r2a3fkjg" path="res://obchod.tscn" id="2_7fkk7"]
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="2_ce2y4"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_jxu7v"]
+
+[node name="4" type="Node2D"]
+script = ExtResource("1_tm6jm")
+obrazok_pozadie = "res://miestnosti/obchod.png"
+kam_spet = 1
+
+[node name="basnicka" parent="." instance=ExtResource("2_jxu7v")]
+path = "res://videa/kabat.wav"
+
+[node name="obchod" parent="." instance=ExtResource("2_7fkk7")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("2_ce2y4")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

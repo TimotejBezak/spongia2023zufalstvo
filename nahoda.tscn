@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgcuond8jlow5"]
+
+[ext_resource type="Script" path="res://nahoda.gd" id="1_1rb64"]
+[ext_resource type="PackedScene" uid="uid://bjx2pbtvbww8a" path="res://kocka.tscn" id="1_fs5n3"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="3_7w18f"]
+
+[node name="nahoda" type="Node2D"]
+script = ExtResource("1_1rb64")
+
+[node name="kocka" parent="." instance=ExtResource("1_fs5n3")]
+
+[node name="kocka2" parent="." instance=ExtResource("1_fs5n3")]
+position = Vector2(194, 15)
+
+[node name="kocka3" parent="." instance=ExtResource("1_fs5n3")]
+position = Vector2(397, 19)
+
+[node name="reset" type="Button" parent="."]
+offset_left = 643.0
+offset_top = 104.0
+offset_right = 779.0
+offset_bottom = 240.0
+icon = ExtResource("3_7w18f")
+
+[connection signal="button_down" from="reset" to="." method="_on_reset_button_down"]

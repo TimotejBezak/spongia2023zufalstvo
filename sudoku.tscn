@@ -1,0 +1,399 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdemigavgstxo"]
+
+[ext_resource type="Script" path="res://sudoku.gd" id="1_b33g6"]
+[ext_resource type="PackedScene" uid="uid://2dvyecl6fls8" path="res://krizovka/policko.tscn" id="2_jmkgy"]
+
+[node name="krizovka" type="Node2D"]
+position = Vector2(3, 0)
+scale = Vector2(0.35022, 0.339254)
+script = ExtResource("1_b33g6")
+
+[node name="oddelovac" type="Line2D" parent="."]
+z_index = 1
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac2" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(642.453, 0)
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac3" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1267.78, 0)
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac4" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1900, 0)
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac5" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1900, 0)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac6" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1900, 633.748)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac7" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1900, 1261.92)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="oddelovac8" type="Line2D" parent="."]
+z_index = 1
+position = Vector2(1900, 1910)
+rotation = 1.5708
+points = PackedVector2Array(0, 0, 0, 1910.07)
+width = 15.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 9
+
+[node name="policko" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "3"
+
+[node name="policko2" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko3" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "6"
+
+[node name="policko4" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[node name="policko5" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "1"
+
+[node name="policko6" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko7" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "8"
+
+[node name="policko8" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko9" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko10" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko11" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko12" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko13" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "8"
+
+[node name="policko14" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "9"
+
+[node name="policko15" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko16" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "4"
+
+[node name="policko17" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "2"
+
+[node name="policko18" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko19" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko20" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko21" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko22" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "2"
+
+[node name="policko23" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko24" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko25" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko26" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko27" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "6"
+
+[node name="policko28" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[node name="policko29" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "6"
+
+[node name="policko30" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko31" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko32" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "3"
+
+[node name="policko33" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko34" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "9"
+
+[node name="policko35" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "8"
+
+[node name="policko36" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "4"
+
+[node name="policko37" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko38" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko39" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "1"
+
+[node name="policko40" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko41" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko42" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko43" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko44" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko45" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko46" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "8"
+
+[node name="policko47" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "3"
+
+[node name="policko48" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "4"
+
+[node name="policko49" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko50" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[node name="policko51" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko52" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko53" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "6"
+
+[node name="policko54" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "1"
+
+[node name="policko55" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "1"
+
+[node name="policko56" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko57" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko58" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko59" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko60" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[node name="policko61" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko62" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko63" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko64" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko65" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[node name="policko66" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "2"
+
+[node name="policko67" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko68" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "6"
+
+[node name="policko69" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "9"
+
+[node name="policko70" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko71" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko72" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko73" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 1
+
+[node name="policko74" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko75" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "9"
+
+[node name="policko76" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko77" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "2"
+
+[node name="policko78" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "1"
+
+[node name="policko79" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "3"
+
+[node name="policko80" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+
+[node name="policko81" parent="GridContainer" instance=ExtResource("2_jmkgy")]
+layout_mode = 2
+typ = 2
+doprava = "5"
+
+[connection signal="stlacene" from="." to="." method="_on_stlacene"]
+[connection signal="mouse_entered" from="GridContainer" to="." method="_on_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer" to="." method="_on_grid_container_mouse_exited"]

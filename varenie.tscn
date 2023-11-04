@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx5ddlemkgvku"]
+
+[ext_resource type="PackedScene" uid="uid://b7ld5yuvhs0yl" path="res://pridavac.tscn" id="1_0psit"]
+[ext_resource type="Script" path="res://varenie.gd" id="1_g4og5"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="2_j1wtp"]
+
+[node name="varenie" type="Node2D" groups=["varenie"]]
+script = ExtResource("1_g4og5")
+
+[node name="pridavac" parent="." instance=ExtResource("1_0psit")]
+offset_left = 776.0
+offset_top = 476.0
+offset_right = 834.0
+offset_bottom = 534.0
+
+[node name="pridavac2" parent="." instance=ExtResource("1_0psit")]
+offset_left = 896.0
+offset_top = 476.0
+offset_right = 954.0
+offset_bottom = 534.0
+
+[node name="uvar" type="Button" parent="."]
+offset_left = 1031.0
+offset_top = 476.0
+offset_right = 1167.0
+offset_bottom = 612.0
+focus_mode = 0
+icon = ExtResource("2_j1wtp")
+
+[connection signal="button_down" from="uvar" to="." method="_on_uvar_button_down"]

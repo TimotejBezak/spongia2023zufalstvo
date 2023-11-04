@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://kewfj8j6wr8b"]
+
+[ext_resource type="Script" path="res://malovana_krizovka/policko_mriezka.gd" id="1_ruqav"]
+[ext_resource type="Texture2D" uid="uid://gf88v7fmge7t" path="res://malovana_krizovka/nevyplnene.png" id="1_s6ky4"]
+
+[node name="policko" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+focus_mode = 0
+button_mask = 3
+icon = ExtResource("1_s6ky4")
+script = ExtResource("1_ruqav")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

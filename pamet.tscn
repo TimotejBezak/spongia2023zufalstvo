@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm22q2whcjort"]
+
+[ext_resource type="Script" path="res://pamet.gd" id="1_duqxt"]
+[ext_resource type="PackedScene" uid="uid://bbl7bdq34sqny" path="res://pamet/tlacidlo.tscn" id="2_a6ib1"]
+[ext_resource type="Texture2D" uid="uid://q3ghjk3bguar" path="res://pamet/farba0.png" id="3_1g8ak"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="4_4hhyl"]
+
+[node name="pamet" type="Node2D"]
+script = ExtResource("1_duqxt")
+
+[node name="tlacidlo" parent="." instance=ExtResource("2_a6ib1")]
+offset_left = 143.0
+offset_right = 201.0
+offset_bottom = 58.0
+icon = ExtResource("3_1g8ak")
+
+[node name="tlacidlo2" parent="." instance=ExtResource("2_a6ib1")]
+offset_left = 208.0
+offset_top = -2.0
+offset_right = 266.0
+offset_bottom = 56.0
+icon = ExtResource("3_1g8ak")
+farba = 1
+
+[node name="tlacidlo3" parent="." instance=ExtResource("2_a6ib1")]
+offset_left = 273.0
+offset_top = 2.0
+offset_right = 331.0
+offset_bottom = 60.0
+icon = ExtResource("3_1g8ak")
+farba = 2
+
+[node name="tlacidlo4" parent="." instance=ExtResource("2_a6ib1")]
+offset_left = 350.0
+offset_top = 3.0
+offset_right = 408.0
+offset_bottom = 61.0
+icon = ExtResource("3_1g8ak")
+farba = 3
+
+[node name="menic" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+
+[node name="info" type="Label" parent="."]
+offset_left = 150.0
+offset_top = 83.0
+offset_right = 190.0
+offset_bottom = 106.0
+
+[node name="dalsi_level" type="Button" parent="."]
+offset_left = 449.0
+offset_top = 7.0
+offset_right = 585.0
+offset_bottom = 143.0
+focus_mode = 0
+icon = ExtResource("4_4hhyl")
+
+[node name="Label" type="Label" parent="dalsi_level"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 67.0
+
+[connection signal="button_down" from="dalsi_level" to="." method="_on_dalsi_level_button_down"]

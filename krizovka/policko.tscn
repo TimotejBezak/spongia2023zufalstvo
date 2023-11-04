@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://2dvyecl6fls8"]
+
+[ext_resource type="Texture2D" uid="uid://crliu7rw1epv5" path="res://krizovka/normalne_policko.png" id="1_soint"]
+[ext_resource type="Script" path="res://krizovka/policko.gd" id="2_gl4w6"]
+
+[node name="policko" type="Button"]
+offset_right = 208.0
+offset_bottom = 208.0
+focus_mode = 0
+action_mode = 0
+icon = ExtResource("1_soint")
+script = ExtResource("2_gl4w6")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

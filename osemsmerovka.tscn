@@ -1,0 +1,1008 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwc3kemqnt7uy"]
+
+[ext_resource type="Script" path="res://osemsmerovka/osemsmerovka.gd" id="1_po54y"]
+[ext_resource type="PackedScene" uid="uid://ptvso2pyjqqj" path="res://osemsmerovka/policko.tscn" id="2_5ipb0"]
+
+[node name="osemsmerovka" type="Node2D"]
+position = Vector2(7, 0)
+script = ExtResource("1_po54y")
+
+[node name="ciara" type="Line2D" parent="."]
+z_index = 4
+points = PackedVector2Array(0, 0, 0, 0)
+width = 4.0
+default_color = Color(0, 0, 0, 1)
+
+[node name="grid" type="GridContainer" parent="."]
+offset_right = 1174.0
+offset_bottom = 802.0
+scale = Vector2(0.700257, 0.700257)
+columns = 19
+
+[node name="policko" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko2" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Z"
+
+[node name="policko3" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko4" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko5" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko6" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Í"
+
+[node name="policko7" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko8" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko9" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko10" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko11" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko12" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko13" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko14" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko15" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko16" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko17" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko18" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko19" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko20" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko21" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko22" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko23" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko24" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ú"
+
+[node name="policko25" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko26" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko27" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko28" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko29" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko30" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko31" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko32" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko33" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko34" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko35" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko36" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko37" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko38" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko39" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko40" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko41" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ú"
+
+[node name="policko42" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko43" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko44" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Z"
+
+[node name="policko45" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko46" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko47" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko48" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko49" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko50" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "V"
+
+[node name="policko51" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Í"
+
+[node name="policko52" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko53" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko54" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Í"
+
+[node name="policko55" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko56" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko57" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko58" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko59" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko60" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Z"
+
+[node name="policko61" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko62" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko63" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko64" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko65" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko66" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko67" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko68" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko69" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko70" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Š"
+
+[node name="policko71" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko72" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko73" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko74" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko75" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko76" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko77" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko78" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko79" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko80" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko81" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko82" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko83" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko84" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko85" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko86" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko87" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ú"
+
+[node name="policko88" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko89" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko90" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "U"
+
+[node name="policko91" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "G"
+
+[node name="policko92" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko93" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko94" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko95" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko96" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ň"
+
+[node name="policko97" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko98" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko99" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko100" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Š"
+
+[node name="policko101" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko102" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko103" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko104" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko105" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko106" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ť"
+
+[node name="policko107" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko108" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko109" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko110" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko111" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko112" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko113" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko114" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko115" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko116" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko117" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko118" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko119" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Š"
+
+[node name="policko120" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko121" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko122" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko123" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko124" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Í"
+
+[node name="policko125" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko126" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko127" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko128" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko129" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko130" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "V"
+
+[node name="policko131" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko132" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko133" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko134" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko135" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko136" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "J"
+
+[node name="policko137" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko138" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko139" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko140" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko141" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko142" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko143" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko144" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko145" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko146" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko147" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Z"
+
+[node name="policko148" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko149" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko150" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko151" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko152" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko153" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko154" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Á"
+
+[node name="policko155" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko156" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko157" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko158" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko159" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko160" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "X"
+
+[node name="policko161" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko162" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko163" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko164" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko165" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko166" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "L"
+
+[node name="policko167" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko168" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko169" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko170" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko171" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko172" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "V"
+
+[node name="policko173" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "V"
+
+[node name="policko174" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Á"
+
+[node name="policko175" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko176" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko177" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko178" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ž"
+
+[node name="policko179" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Í"
+
+[node name="policko180" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko181" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "P"
+
+[node name="policko182" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko183" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko184" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko185" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko186" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko187" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko188" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko189" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko190" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko191" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko192" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko193" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko194" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "G"
+
+[node name="policko195" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko196" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko197" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko198" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko199" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko200" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko201" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko202" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko203" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "T"
+
+[node name="policko204" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko205" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko206" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "J"
+
+[node name="policko207" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko208" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "B"
+
+[node name="policko209" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "N"
+
+[node name="policko210" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko211" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko212" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Á"
+
+[node name="policko213" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko214" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko215" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko216" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko217" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko218" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "U"
+
+[node name="policko219" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "D"
+
+[node name="policko220" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko221" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko222" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Z"
+
+[node name="policko223" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko224" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko225" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "U"
+
+[node name="policko226" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko227" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko228" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko229" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Y"
+
+[node name="policko230" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "M"
+
+[node name="policko231" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "H"
+
+[node name="policko232" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "O"
+
+[node name="policko233" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko234" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "U"
+
+[node name="policko235" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko236" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Á"
+
+[node name="policko237" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "S"
+
+[node name="policko238" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "V"
+
+[node name="policko239" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko240" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "E"
+
+[node name="policko241" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Č"
+
+[node name="policko242" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "K"
+
+[node name="policko243" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko244" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "R"
+
+[node name="policko245" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "A"
+
+[node name="policko246" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "I"
+
+[node name="policko247" parent="grid" instance=ExtResource("2_5ipb0")]
+layout_mode = 2
+pismeno = "Ž"

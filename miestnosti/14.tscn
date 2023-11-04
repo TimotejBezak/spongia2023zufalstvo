@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cnogp66wi1w4r"]
+
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_0p061"]
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_nqs3h"]
+[ext_resource type="PackedScene" uid="uid://bifn4dbpj55ro" path="res://cakanie.tscn" id="2_istih"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_wpng8"]
+
+[node name="14" type="Node2D"]
+script = ExtResource("1_0p061")
+obrazok_pozadie = "res://miestnosti/bibliotheca.png"
+kam_spet = 13
+
+[node name="basnicka" parent="." instance=ExtResource("2_wpng8")]
+path = "res://videa/trpezlivost.wav"
+
+[node name="cakanie" parent="." instance=ExtResource("2_istih")]
+
+[node name="miestnost" parent="." instance=ExtResource("1_nqs3h")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

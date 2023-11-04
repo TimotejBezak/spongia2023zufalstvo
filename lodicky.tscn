@@ -1,0 +1,276 @@
+[gd_scene load_steps=4 format=3 uid="uid://m1fp6wbcxr17"]
+
+[ext_resource type="Script" path="res://lodicky.gd" id="1_fx070"]
+[ext_resource type="PackedScene" uid="uid://dcafys474455m" path="res://malovana_krizovka/policko_napoveda.tscn" id="2_f1s5r"]
+[ext_resource type="PackedScene" uid="uid://b76oryeemk437" path="res://lodicky/policko.tscn" id="2_khf87"]
+
+[node name="lodicky" type="Node2D"]
+script = ExtResource("1_fx070")
+
+[node name="grid" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 9
+
+[node name="policko_napoveda" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+
+[node name="policko_napoveda2" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "5"
+
+[node name="policko_napoveda3" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "0"
+
+[node name="policko_napoveda4" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "1"
+
+[node name="policko_napoveda5" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "4"
+
+[node name="policko_napoveda6" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "0"
+
+[node name="policko_napoveda7" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko_napoveda8" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko_napoveda9" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko_napoveda10" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "4"
+
+[node name="policko" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko2" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko3" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko4" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko5" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko6" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko7" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko8" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda11" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "1"
+
+[node name="policko9" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko10" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko11" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko12" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko13" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko14" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko15" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko16" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda12" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko17" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko18" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko19" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko20" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko21" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko22" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko23" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+typ = 3
+
+[node name="policko24" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda13" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko25" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko26" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko27" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko28" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko29" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko30" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko31" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko32" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda14" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "1"
+
+[node name="policko33" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko34" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko35" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko36" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+typ = 5
+
+[node name="policko37" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko38" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko39" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko40" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda15" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "3"
+
+[node name="policko41" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+typ = 3
+
+[node name="policko42" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko43" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko44" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko45" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko46" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+typ = 7
+
+[node name="policko47" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko48" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda16" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "2"
+
+[node name="policko49" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko50" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko51" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko52" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko53" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko54" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko55" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko56" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko_napoveda17" parent="grid" instance=ExtResource("2_f1s5r")]
+layout_mode = 2
+cislo = "2"
+
+[node name="policko57" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko58" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko59" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko60" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko61" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko62" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko63" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2
+
+[node name="policko64" parent="grid" instance=ExtResource("2_khf87")]
+layout_mode = 2

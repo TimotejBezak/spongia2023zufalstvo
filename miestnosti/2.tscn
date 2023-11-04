@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bf2rcm51lxh56"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_dxcvu"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_sl44s"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_okcih"]
+
+[node name="2" type="Node2D"]
+script = ExtResource("1_sl44s")
+obrazok_pozadie = "res://miestnosti/pozadieles.png"
+kam_dalej = Array[int]([19, 20, 30, 48])
+kam_spet = 1
+
+[node name="basnicka" parent="." instance=ExtResource("2_okcih")]
+path = "res://videa/les.wav"
+
+[node name="miestnost" parent="." instance=ExtResource("1_dxcvu")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

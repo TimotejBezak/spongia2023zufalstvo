@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cq6uwa4jvsi2x"]
+
+[ext_resource type="Script" path="res://sadenie.gd" id="1_4lrbn"]
+[ext_resource type="PackedScene" uid="uid://b7ld5yuvhs0yl" path="res://pridavac.tscn" id="1_km6f1"]
+
+[node name="sadenie" type="Node2D"]
+script = ExtResource("1_4lrbn")
+
+[node name="pridavac" parent="." instance=ExtResource("1_km6f1")]
+offset_left = 319.0
+offset_top = 184.0
+offset_right = 377.0
+offset_bottom = 242.0

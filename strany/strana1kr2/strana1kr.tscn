@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://duho2iqk6ysxv"]
+
+[ext_resource type="Script" path="res://krizovka/krizovka.gd" id="1_ppr0b"]
+[ext_resource type="PackedScene" uid="uid://2dvyecl6fls8" path="res://krizovka/policko.tscn" id="2_bh1yr"]
+
+[node name="krizovka" type="Node2D"]
+script = ExtResource("1_ppr0b")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+columns = 6
+
+[node name="policko" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[node name="policko2" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[node name="policko3" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[node name="policko4" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[node name="policko5" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[node name="policko6" parent="GridContainer" instance=ExtResource("2_bh1yr")]
+layout_mode = 2
+
+[connection signal="stlacene" from="." to="." method="_on_stlacene"]
+[connection signal="mouse_entered" from="GridContainer" to="." method="_on_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer" to="." method="_on_grid_container_mouse_exited"]

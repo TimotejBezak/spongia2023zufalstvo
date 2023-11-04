@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://ca4ldidi0w307"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_6q31w"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_f61og"]
+[ext_resource type="PackedScene" uid="uid://b68sixk6ns0dl" path="res://heslo.tscn" id="2_fukyf"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_nv5xs"]
+
+[node name="8" type="Node2D"]
+script = ExtResource("1_f61og")
+obrazok_pozadie = "res://miestnosti/jaskyna3.png"
+kam_spet = 10
+
+[node name="basnicka" parent="." instance=ExtResource("2_nv5xs")]
+path = "res://videa/truhlica.wav"
+
+[node name="heslo" parent="." instance=ExtResource("2_fukyf")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("1_6q31w")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://cu4ohc220maij"]
+
+[ext_resource type="Script" path="res://krizovka/label_napoveda.gd" id="1_ifw3y"]
+[ext_resource type="LabelSettings" uid="uid://nmt2xq50i2hm" path="res://krizovka/label_napoveda.tres" id="2_8dn4d"]
+[ext_resource type="Texture2D" uid="uid://dgyndwr300nkh" path="res://grafika/ciernypixel.png" id="3_u1eip"]
+
+[node name="label_napoveda" type="Node2D"]
+script = ExtResource("1_ifw3y")
+
+[node name="label_cele" type="Label" parent="."]
+offset_right = 200.0
+offset_bottom = 200.0
+label_settings = ExtResource("2_8dn4d")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="label_doprava" type="Label" parent="."]
+offset_right = 200.0
+offset_bottom = 100.0
+label_settings = ExtResource("2_8dn4d")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="label_dole" type="Label" parent="."]
+offset_top = 100.0
+offset_right = 200.0
+offset_bottom = 200.0
+label_settings = ExtResource("2_8dn4d")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="predelovac" type="Sprite2D" parent="."]
+position = Vector2(104, 100)
+scale = Vector2(200, 2.946)
+texture = ExtResource("3_u1eip")

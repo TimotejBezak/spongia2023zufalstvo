@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7ld5yuvhs0yl"]
+
+[ext_resource type="Texture2D" uid="uid://dh5n3uqkapsjy" path="res://grafika/pridat_item.png" id="1_rovqu"]
+[ext_resource type="Script" path="res://pridavac.gd" id="2_aidie"]
+
+[node name="pridavac" type="Button" groups=["pridavac"]]
+offset_right = 8.0
+offset_bottom = 8.0
+focus_mode = 0
+icon = ExtResource("1_rovqu")
+script = ExtResource("2_aidie")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

@@ -1,0 +1,460 @@
+[gd_scene load_steps=22 format=3 uid="uid://cgiwt7qc23kmt"]
+
+[ext_resource type="Script" path="res://kniha.gd" id="1_6t281"]
+[ext_resource type="PackedScene" uid="uid://dc1isisyjj8xu" path="res://strana.tscn" id="2_d6i65"]
+[ext_resource type="LabelSettings" uid="uid://uodceqa1kubm" path="res://osemsmerovka/kniha_text.tres" id="3_4084s"]
+[ext_resource type="PackedScene" uid="uid://cftuxvp6haukk" path="res://strany/strana1kr2/strana1kr1.tscn" id="6_v1pwf"]
+[ext_resource type="PackedScene" uid="uid://g34e103u1ej" path="res://strany/strana1kr2/strana1kr2.tscn" id="7_040wm"]
+[ext_resource type="PackedScene" uid="uid://bg84ql21pd2f6" path="res://strany/strana1kr2/strana1kr3.tscn" id="8_r6yse"]
+[ext_resource type="PackedScene" uid="uid://m1fp6wbcxr17" path="res://lodicky.tscn" id="9_0gssc"]
+[ext_resource type="PackedScene" uid="uid://duho2iqk6ysxv" path="res://strany/strana1kr2/strana1kr.tscn" id="9_20r8w"]
+[ext_resource type="PackedScene" uid="uid://bcocd42h56lq6" path="res://krizovka.tscn" id="10_dbxkh"]
+[ext_resource type="PackedScene" uid="uid://uo0dy5ctdws4" path="res://lodicky_mapa.tscn" id="10_nlcwc"]
+[ext_resource type="FontFile" uid="uid://6moiirquvjqw" path="res://fonty/berenika/Berenika-Book.ttf" id="11_cu384"]
+[ext_resource type="PackedScene" uid="uid://cq75gi5v1yk1b" path="res://malovana_krizovka.tscn" id="11_nleha"]
+[ext_resource type="FontFile" uid="uid://cj4s17q8r5802" path="res://fonty/berenika/Berenika-Bold.ttf" id="12_lram5"]
+[ext_resource type="Texture2D" uid="uid://ym44vt5flkeh" path="res://grafika/tlacidlo_kniha.png" id="13_bkvli"]
+[ext_resource type="PackedScene" uid="uid://bwc3kemqnt7uy" path="res://osemsmerovka.tscn" id="13_cfhuu"]
+[ext_resource type="FontFile" uid="uid://5lkb16nnd0f6" path="res://fonty/berenika/Berenika-BookOblique.ttf" id="13_fojco"]
+[ext_resource type="PackedScene" uid="uid://bdemigavgstxo" path="res://sudoku.tscn" id="14_4nv7g"]
+[ext_resource type="FontFile" uid="uid://5235vcaciyjv" path="res://fonty/berenika/Berenika-BoldOblique.ttf" id="14_ldnt8"]
+[ext_resource type="PackedScene" uid="uid://cvw0nbyubrqxv" path="res://strany/strana1kr2/strana13kr.tscn" id="15_m3nnb"]
+[ext_resource type="Texture2D" uid="uid://bt00qoy3bk4eu" path="res://next_page.png" id="17_jepl6"]
+[ext_resource type="Texture2D" uid="uid://d4nh8jr4rlxus" path="res://previous_page.png" id="18_40pdt"]
+
+[node name="kniha" type="Node2D"]
+z_index = 2
+script = ExtResource("1_6t281")
+
+[node name="vsetko" type="Node2D" parent="."]
+position = Vector2(47, 85)
+
+[node name="animacia" type="Node2D" parent="vsetko"]
+z_index = 1
+
+[node name="strana" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+modulate = Color(1, 1, 1, 0.705882)
+position = Vector2(920, 422)
+
+[node name="strana2" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+strana = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="vsetko/strana2"]
+z_index = 1
+offset_left = -428.0
+offset_top = -121.998
+offset_right = 372.0
+offset_bottom = 778.0
+rotation = -1.5708
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 102
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[font=\"fonty/traditio.ttf\"]Čarodejnícke noviny[/font]"
+
+[node name="strana3" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(919, 423)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="vsetko/strana3"]
+z_index = 1
+offset_left = -467.997
+offset_top = 930.002
+offset_right = 332.003
+offset_bottom = 1830.0
+rotation = -1.5708
+scale = Vector2(1.10551, 1.10551)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[font_size=32][b]Vážený čarodejnícky čitatelia,[/b][/font_size]
+
+Do rúk sa vám d[b]O[/b]stáva najnovšie vydanie [b]P[/b]ravide[b]L[/b]ného mes[b]A[/b]čníka Čudné Časy Čarodejné. Ako už iste vie[b]T[/b]e, svet kúziel a mágie je neustále v pohybe a nové vedomosti sa vždy z[b]Í[/b]du. Práve preto [b]S[/b]me pre vás zozbier[b]A[/b]li najaktuálnejšie a najkúzelnejšie info[b]R[/b]mác[b]IE[/b] zo sveta čarov. Dozviete sa napríklad zaujímavé [b]Š[/b]tat[b]I[/b]stiky, správnu opa[b]T[/b]eru o čarodejnícke rastliny a najnovšie metódy ich sadenia, [b]Ú[/b]žasné recepty na e[b]L[/b]ixíry a omn[b]OH[/b]o viac. Nezabudnite sa zapojiť do našej súťaže a hrať o pob[b]Y[/b]t v luxusom wellnese Okúzľujúca Oáza.
+
+[b]Kúzelný Karol
+Šéfredaktor
+Čudné Časy Čarodejné[/b]
+"
+
+[node name="krizovka" parent="vsetko/strana3" instance=ExtResource("6_v1pwf")]
+z_index = 1
+position = Vector2(305.001, 924.999)
+rotation = -1.5708
+scale = Vector2(0.350975, 0.35)
+
+[node name="krizovka2" parent="vsetko/strana3" instance=ExtResource("7_040wm")]
+z_index = 1
+position = Vector2(230.003, 924.999)
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+
+[node name="krizovka3" parent="vsetko/strana3" instance=ExtResource("8_r6yse")]
+z_index = 1
+position = Vector2(455.003, 924.998)
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+
+[node name="krizovka4" parent="vsetko/strana3" instance=ExtResource("9_20r8w")]
+z_index = 1
+position = Vector2(380.003, 924.999)
+rotation = -1.5708
+scale = Vector2(0.35, 0.35)
+
+[node name="strana4" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+strana = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="vsetko/strana4"]
+z_index = 1
+offset_left = -472.0
+offset_top = -57.9984
+offset_right = 328.0
+offset_bottom = 842.002
+rotation = -1.5708
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[font_size=34][b]Nehnuteľnosti inzercie[/b][/font_size]
+
+[p]Predám 4-izbovú noru hlboko v zemi, so oplotenou záhradou a studňou. Nora sa nachádza v Dolnej Oranici. Prehliadka možná po telepatickom dohovore. Značka: Kvalitné bývanie[/p]
+
+[p]Hľadám chatrč na stračacej nôžke. Stačí len pre jednu osobu. Musí mať pec na neposlušné deti. Značka: Súrne [/p]
+"
+
+[node name="tutorial lodicky" type="RichTextLabel" parent="vsetko/strana4"]
+z_index = 1
+offset_left = -96.0
+offset_top = -77.0
+offset_right = 704.0
+offset_bottom = 110.0
+rotation = -1.5708
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "lodickytutorial
+"
+
+[node name="lodicky" parent="vsetko/strana4" instance=ExtResource("9_0gssc")]
+position = Vector2(107, -58.0004)
+rotation = -1.5708
+scale = Vector2(0.656579, 0.656579)
+
+[node name="osemsmerovka" parent="vsetko/strana4" instance=ExtResource("10_nlcwc")]
+position = Vector2(149.998, -495)
+rotation = -1.5708
+scale = Vector2(0.930283, 0.930283)
+
+[node name="strana5" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+
+[node name="krizovka" parent="vsetko/strana5" instance=ExtResource("10_dbxkh")]
+z_index = 1
+position = Vector2(-493.016, 959.172)
+rotation = -1.5708
+scale = Vector2(0.317807, 0.305548)
+
+[node name="strana7" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(919, 423)
+strana = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="vsetko/strana7"]
+z_index = 1
+offset_left = -487.008
+offset_top = -45.9833
+offset_right = 312.992
+offset_bottom = 854.017
+rotation = -1.5708
+scale = Vector2(1.12324, 1.12535)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_fonts/italics_font = ExtResource("14_ldnt8")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+theme_override_font_sizes/italics_font_size = 28
+bbcode_enabled = true
+text = "[font_size=42][b]Čarodejnícke darčeky[/b][/font_size]
+
+Ako povedal Jaroslav Seifert, [i]do hrobu si donášame len to, čo sme ľuďom rozdali. Čo sme si nechali pre seba, odíde spolu s nami.[/i] Je dôležité ľudí okolo nás a na ktorých nám záleží z času na čas obdarovať. A hoci sa vraví, že každý dar sa cení, je predsa len dôležité vybrať ten správny. V tomto článku vám ukážeme top 3 sezónne tipy na darčeky ktoré naozaj potešia.
+
+	[b]1. Čarodejnícke rukavice do záhrady[/b]
+Sezóna pestovania je už v plnom prúde, a každý pestovateľ určite ocení pár kvalitných rukavíc.
+
+	[b]2. Fľaša dobrej medoviny[/b]
+Ak je váš priateľ poriadny fajnšmeker, tak mu dobrou medovinou určite uľahodíte. A aj ak by nebol, tak mu spravíte radosť, veď predsa málokto pohrdne kvalitnou medovinou.
+
+	[b]3. Sadu na čistenie elixírových fliaš[/b]
+Čisté fľaše sú základom kvalitných elixírov a s takouto súpravou bude mať váš priateľ vždy všetky fľaše krištáľovo čisté, pre tie najkvalitnejšie elixíry.
+"
+
+[node name="strana8" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="vsetko/strana8"]
+z_index = 1
+offset_left = -467.997
+offset_top = 940.002
+offset_right = 282.003
+offset_bottom = 1740.0
+rotation = -1.5708
+scale = Vector2(1.19397, 1.19397)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_fonts/italics_font = ExtResource("13_fojco")
+theme_override_fonts/bold_italics_font = ExtResource("14_ldnt8")
+theme_override_font_sizes/normal_font_size = 30
+theme_override_font_sizes/bold_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+bbcode_enabled = true
+text = "[font_size=34][b]Ide sa? Ide sa! Do lesa![/b][/font_size]
+
+Často sa nám stava, že ideme niekam ale nevieme cestu. Tu je jednoduchý postup ako vždy trafiť do nášho cieľa: Dôležitá je vždy správna [b]doprava[/b]. [b]Doprava[/b]? Pýtate sa. No samozrejme. Na ostrov sa autom predsa nedostanete. Vždy si preto treba zvoliť správny [b]dopravný [/b]prostriedok, ktorý vás [b]dopraví[/b] do cieľa. To je ale samozrejmé. Poďme teda [b]rovno[/b] na vec. Dôležité je hlavne byť sebavedomý. Dokonca, je dokázaná [b]priama[/b] úmernosť medzi sebavedomím a úspešnosťou trafiť. Taktiež je dôležité stáť [b]vzpriamene[/b] a mať vystretý chrbát. Okrem toho je dobré si zaobstarať aj kvalitný pár topánok, v ktorých sa vám bude dobre putovať. Aktuálne majú v Čarotope výhodné [b]zľavy[/b]. A ak [b]nepoľavíte[/b] v tempe dorazíte do cieľa raz dva .
+
+"
+
+[node name="strana9" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+strana = 1
+
+[node name="slova23" type="RichTextLabel" parent="vsetko/strana9"]
+custom_minimum_size = Vector2(600, 0)
+offset_left = -475.001
+offset_top = -140.998
+offset_right = 474.999
+offset_bottom = 259.002
+rotation = -1.5708
+scale = Vector2(0.763561, 0.763561)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 38
+theme_override_font_sizes/bold_font_size = 82
+bbcode_enabled = true
+text = "[b]OSMESMEROVKA[/b]"
+
+[node name="osemsmerovka" parent="vsetko/strana9" instance=ExtResource("13_cfhuu")]
+position = Vector2(-374, -41.9987)
+rotation = -1.5708
+
+[node name="slova" type="RichTextLabel" parent="vsetko/strana9/osemsmerovka"]
+custom_minimum_size = Vector2(600, 0)
+offset_left = 5.00201
+offset_top = 579.0
+offset_right = 955.002
+offset_bottom = 979.0
+scale = Vector2(0.850652, 0.850652)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 38
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+text = "[b]ABRAKADABRA, ATRAMENT, BELZEBUB, ČARY, ČIŽMA, ČREP, DELOMET, ELIXÍR, HOKUS, JAŠTERE, KABÁT, KARTY, KATAKOMBY, KLAVÍR, KLIATBA, KLOBÚK, KRYPTA, KRYSY, KÚZELNÍK, KÚZLO, LEGENDA, LEKTVAR, MÁGIA, MEDIAR, OTVORY, PLAMEŇ, POKUS, PRÍPRAVAČAJU, PRÍŠERA, ROBOT, SMRTKA, STRAŠIDLO, SVIEČKA, TELEPAT, TRÁVA, ZAKLÍNADLO, ŽIARA, ZRKADLO[/b]"
+
+[node name="strana10" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="vsetko/strana10"]
+z_index = 1
+offset_left = -456.983
+offset_top = 940.489
+offset_right = 343.017
+offset_bottom = 1840.49
+rotation = -1.5708
+scale = Vector2(1.11478, 1.06293)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[font_size=42][b]Čarodejnícka štatistika[/b][/font_size]
+
+Ako je už každým mesiacom zvykom, aj tento mesiac prináša ČÚS (Čarodejnícky Úrad Štatistiky) čerstvú várku najnovších štatistík. Za posledný mesiac sa vyrobilo [b]12 465 223[/b] nových čarodejníckych paličiek, čo je o [b]3.12[/b]% viac ako minulý mesiac. Zároveň sa predalo [b]11 567 983[/b] čarodejníckych paličiek. Je to prvý krát, čo bol počet vyrobených paličiek väčší ako počet predaných paličiek a podľa expertov ČÚS to môže znamenať koniec paličkovej krízy. Okrem toho narástol aj počet čarodejníckej literatúry a za tento mesiac bolo publikovaných neuveriteľných [b]16 322[/b] kníh. Taktiež sa predalo [b]123 689[/b] čarodejníckych klobúkov, [b]231 023[/b] čiernych mačiek a [b]101 632[/b] lietajucich metiel. Do čarodejníckej legislatívy bolo tento mesiac pridaných [b]23[/b] nových zaklínadiel a aktuálny počet povolených zaklínadiel je [b]8763[/b]. Priemerný čarodejnícky plat sa pohybuje okolo [b]6 534[/b] šmeklov, čo je v provnaní s minulomesačným priemerom ([b]6 322[/b]) o [b]3.33[/b]% viac. Priemerná cena kotlov nezdražela a stále sa pohybuje okolo [b]83[/b] šmeklov.
+
+([b]Jedno[/b] z týchto číslel sa možno zíde neskôr)
+"
+
+[node name="strana11" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="vsetko/strana11"]
+z_index = 1
+offset_left = -490.0
+offset_top = -21.9983
+offset_right = 425.0
+offset_bottom = 1010.0
+rotation = -1.5708
+scale = Vector2(1.0864, 1.0864)
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+bbcode_enabled = true
+text = "[b][font_size=48]Vtipy zo sveta mágie[/font_size][/b]
+
+Viete ako sa volá čarodejníkov pes?
+[b]Labrakadabrador[/b]
+
+Vedeli ste, že slovenský dôchodcovia sú čarodejníci?
+[b]Celý mesiac musia čarovať, aby prežili zo svojich dôchodkov[/b]
+
+Príde muž za čarodejníkom, aby ho zbavil kliatby pod ktorou je už 40 rokov. Čarodejník mu povie: Dobre, ale musíš mi presne povedať slová, ktoré na teba tú kliatbu uvalili. A muž mu hovorí: [b]A teraz vás prehlasujem za muža a ženu[/b]
+
+Dvaja draci spolu obedujú polievku a zrazu jeden hovorí druhému: [b]Počuj, ale fúkaním ti tá polievka nevychladne[/b]
+
+Prečo si čarodejník priniesol na kúzelnícke predstavenie rebrík?
+[b]Lebo chcel vedieť čo má v rukáve![/b]"
+
+[node name="strana12" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+
+[node name="malovana_krizovka" parent="vsetko/strana12" instance=ExtResource("11_nleha")]
+z_index = 1
+position = Vector2(-465.997, 892.002)
+rotation = -1.5708
+scale = Vector2(0.532247, 0.532247)
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="vsetko/strana12"]
+z_index = 1
+offset_left = 402.003
+offset_top = 891.999
+offset_right = 1202.0
+offset_bottom = 1792.0
+rotation = -1.5708
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 36
+bbcode_enabled = true
+text = "[b]Čo by to tak mohlo byť? Rozhodne to bude niečo dôležité.[/b]
+"
+
+[node name="strana13" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+strana = 1
+
+[node name="krizovka" parent="vsetko/strana13" instance=ExtResource("14_4nv7g")]
+position = Vector2(-479.259, -83.6523)
+rotation = -1.5708
+scale = Vector2(0.412296, 0.399386)
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="vsetko/strana13"]
+z_index = 1
+offset_left = 298.0
+offset_top = -84.0011
+offset_right = 1098.0
+offset_bottom = 816.0
+rotation = -1.5708
+size_flags_horizontal = 4
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_cu384")
+theme_override_fonts/bold_font = ExtResource("12_lram5")
+theme_override_font_sizes/normal_font_size = 28
+theme_override_font_sizes/bold_font_size = 44
+bbcode_enabled = true
+text = "[b]1 2 3 4 5 6 7 8 9
+I P H A U L O S Ž[/b]
+"
+
+[node name="krizovka2" parent="vsetko/strana13" instance=ExtResource("15_m3nnb")]
+position = Vector2(415, -84.0015)
+rotation = -1.5708
+scale = Vector2(0.316477, 0.316477)
+
+[node name="strana14" parent="vsetko" instance=ExtResource("2_d6i65")]
+visible = false
+position = Vector2(920, 423)
+strana = 1
+
+[node name="Label" type="Label" parent="vsetko/strana14"]
+z_index = 1
+offset_left = -10.9971
+offset_top = 825.0
+offset_right = 139.003
+offset_bottom = 879.0
+rotation = -1.57151
+text = "btrbnytntynyttnytn"
+label_settings = ExtResource("3_4084s")
+metadata/_edit_use_anchors_ = true
+
+[node name="strana6" parent="vsetko" instance=ExtResource("2_d6i65")]
+modulate = Color(1, 1, 1, 0.705882)
+position = Vector2(920, 423)
+strana = 1
+
+[node name="doprava" type="Button" parent="vsetko"]
+offset_left = 953.0
+offset_top = 915.0
+offset_right = 1089.0
+offset_bottom = 1051.0
+scale = Vector2(0.8, 0.8)
+focus_mode = 0
+icon = ExtResource("17_jepl6")
+flat = true
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="dolava" type="Button" parent="vsetko"]
+offset_left = 769.0
+offset_top = 915.0
+offset_right = 905.0
+offset_bottom = 1051.0
+scale = Vector2(0.8, 0.8)
+focus_mode = 0
+icon = ExtResource("18_40pdt")
+flat = true
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="toggle" type="Button" parent="."]
+z_index = 1
+offset_left = 1730.0
+offset_top = 949.0
+offset_right = 1895.0
+offset_bottom = 1057.0
+focus_mode = 0
+toggle_mode = true
+icon = ExtResource("13_bkvli")
+flat = true
+
+[connection signal="button_down" from="vsetko/doprava" to="." method="_on_doprava_button_down"]
+[connection signal="button_down" from="vsetko/dolava" to="." method="_on_dolava_button_down"]
+[connection signal="toggled" from="toggle" to="." method="_on_toggle_toggled"]

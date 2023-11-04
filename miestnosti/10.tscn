@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://bnfc0jrxbn7pl"]
+
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_qx35o"]
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_xeg17"]
+[ext_resource type="PackedScene" uid="uid://b7ld5yuvhs0yl" path="res://pridavac.tscn" id="2_44vri"]
+[ext_resource type="Script" path="res://miestnosti/rebrik.gd" id="2_p0n1m"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_wgj3k"]
+[ext_resource type="Texture2D" uid="uid://dk0eqwpmsfs4i" path="res://grafika/itemy/rebrik.png" id="3_chquw"]
+
+[node name="10" type="Node2D"]
+script = ExtResource("1_qx35o")
+obrazok_pozadie = "res://miestnosti/jaskyna3.png"
+kam_dalej = Array[int]([8])
+kam_spet = 9
+
+[node name="basnicka" parent="." instance=ExtResource("2_wgj3k")]
+path = "res://videa/rebrik.wav"
+
+[node name="rebrik" type="Node2D" parent="."]
+z_index = 1
+script = ExtResource("2_p0n1m")
+
+[node name="rebriky" type="Node2D" parent="rebrik"]
+
+[node name="Rebrik" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 535)
+texture = ExtResource("3_chquw")
+
+[node name="Rebrik2" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 452)
+texture = ExtResource("3_chquw")
+
+[node name="Rebrik3" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 367)
+texture = ExtResource("3_chquw")
+
+[node name="Rebrik4" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 619)
+texture = ExtResource("3_chquw")
+
+[node name="Rebrik5" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 703)
+texture = ExtResource("3_chquw")
+
+[node name="Rebrik6" type="Sprite2D" parent="rebrik/rebriky"]
+position = Vector2(1309, 785)
+texture = ExtResource("3_chquw")
+
+[node name="pridavac" parent="rebrik" instance=ExtResource("2_44vri")]
+offset_left = 1282.0
+offset_top = 500.0
+offset_right = 1340.0
+offset_bottom = 558.0
+
+[node name="miestnost" parent="." instance=ExtResource("1_xeg17")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

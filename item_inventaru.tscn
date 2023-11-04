@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbc3ledxvgnqk"]
+
+[ext_resource type="Texture2D" uid="uid://c16jtr44fbso5" path="res://grafika/itemy/elixir_stastia.png" id="1_2mj7x"]
+[ext_resource type="Script" path="res://item_inventaru.gd" id="1_wqhsd"]
+[ext_resource type="Texture2D" uid="uid://cgi7gktu8k4ai" path="res://grafika/highlight.png" id="2_58l1w"]
+
+[node name="item_inventaru" type="Button" groups=["item"]]
+z_index = 1
+offset_right = 12.0
+offset_bottom = 12.0
+focus_mode = 0
+icon = ExtResource("1_2mj7x")
+flat = true
+script = ExtResource("1_wqhsd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = -22.0
+offset_right = 120.0
+offset_bottom = 1.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+
+[node name="highlight" type="Sprite2D" parent="Node2D"]
+z_index = -1
+position = Vector2(25, 25)
+texture = ExtResource("2_58l1w")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://csc5nfmtfab1f"]
+
+[ext_resource type="Script" path="res://basnicka.gd" id="1_q0oph"]
+
+[sub_resource type="AudioStream" id="AudioStream_7ocib"]
+
+[node name="basnicka" type="AudioStreamPlayer2D"]
+stream = SubResource("AudioStream_7ocib")
+volume_db = 24.0
+script = ExtResource("1_q0oph")

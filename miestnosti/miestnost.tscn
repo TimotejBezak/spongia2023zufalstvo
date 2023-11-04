@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dp0ccj8iaqbkv"]
+
+[ext_resource type="PackedScene" uid="uid://djrqgq8esyq8s" path="res://inventar.tscn" id="2_v1xb6"]
+[ext_resource type="Texture2D" uid="uid://d0eop6ekufyap" path="res://miestnosti/pozadie1.png" id="4_xchig"]
+[ext_resource type="Texture2D" uid="uid://c5nkah1xbvkb" path="res://grafika/minca.png" id="5_mawrb"]
+[ext_resource type="PackedScene" uid="uid://cgiwt7qc23kmt" path="res://kniha.tscn" id="5_nrdxh"]
+[ext_resource type="PackedScene" uid="uid://bwe5xy5xgc2cg" path="res://carodejnik.tscn" id="6_sktqy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_nta6e"]
+font_size = 40
+
+[node name="miestnost" type="Node2D"]
+
+[node name="inventar" parent="." instance=ExtResource("2_v1xb6")]
+z_index = 2
+
+[node name="Pozadie1" type="Sprite2D" parent="."]
+position = Vector2(955.889, 539.75)
+texture = ExtResource("4_xchig")
+
+[node name="kniha" parent="." instance=ExtResource("5_nrdxh")]
+
+[node name="carodejnik" parent="." instance=ExtResource("6_sktqy")]
+position = Vector2(800, 773)
+
+[node name="tlacidla_presun_tam" type="GridContainer" parent="."]
+offset_left = 1757.0
+offset_top = 424.0
+offset_right = 1797.0
+offset_bottom = 464.0
+
+[node name="tlacidla_presun_spet" type="GridContainer" parent="."]
+offset_left = 32.0
+offset_top = 852.0
+offset_right = 72.0
+offset_bottom = 892.0
+
+[node name="peniaze" type="Node2D" parent="."]
+position = Vector2(1552, 348)
+
+[node name="peniazky" type="Label" parent="peniaze"]
+z_index = 1
+offset_left = 76.8511
+offset_top = -28.0
+offset_right = 116.851
+offset_bottom = 27.0
+label_settings = SubResource("LabelSettings_nta6e")
+vertical_alignment = 1
+
+[node name="Minca" type="Sprite2D" parent="peniaze"]
+position = Vector2(43.8511, -3)
+scale = Vector2(0.358663, 0.358663)
+texture = ExtResource("5_mawrb")

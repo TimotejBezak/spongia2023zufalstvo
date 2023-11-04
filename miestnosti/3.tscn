@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://ceujsvvtghero"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_ege22"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_joghs"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_10un0"]
+[ext_resource type="PackedScene" uid="uid://ke0bita2v3fj" path="res://kamarat.tscn" id="2_vedey"]
+
+[node name="3" type="Node2D"]
+script = ExtResource("1_joghs")
+obrazok_pozadie = "res://miestnosti/pozadie1.png"
+kam_spet = 2
+
+[node name="basnicka" parent="." instance=ExtResource("2_10un0")]
+path = "res://videa/kamarat.wav"
+
+[node name="kamarat" parent="." instance=ExtResource("2_vedey")]
+
+[node name="miestnost" parent="." instance=ExtResource("1_ege22")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

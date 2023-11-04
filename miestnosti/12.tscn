@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cxdyxx45eyajc"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_pncyo"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_xnlt5"]
+[ext_resource type="PackedScene" uid="uid://jb27l6ru48k4" path="res://hadanky.tscn" id="2_2si4b"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_p2g8q"]
+[ext_resource type="Texture2D" uid="uid://bsguuljiu7o4e" path="res://grafika/ghost.png" id="5_22xoq"]
+
+[node name="12" type="Node2D"]
+script = ExtResource("1_xnlt5")
+obrazok_pozadie = "res://miestnosti/bibliotheca.png"
+kam_dalej = Array[int]([13])
+kam_spet = 1
+
+[node name="basnicka" parent="." instance=ExtResource("2_p2g8q")]
+path = "res://videa/kniznica.wav"
+
+[node name="hadanky" parent="." instance=ExtResource("2_2si4b")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("1_pncyo")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]
+
+[node name="Ghost" type="Sprite2D" parent="."]
+position = Vector2(1372, 615)
+scale = Vector2(7.1067, 7.1067)
+texture = ExtResource("5_22xoq")

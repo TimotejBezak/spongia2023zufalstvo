@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkmxynucci4kd"]
+
+[ext_resource type="Script" path="res://presunut.gd" id="1_4ru6j"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="1_8hkde"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qdkxg"]
+font_size = 24
+
+[node name="presunut" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+focus_mode = 0
+icon = ExtResource("1_8hkde")
+script = ExtResource("1_4ru6j")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 138.0
+label_settings = SubResource("LabelSettings_qdkxg")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="neda_sa" type="Label" parent="."]
+layout_mode = 0
+offset_left = -142.0
+offset_top = 53.0
+offset_right = -102.0
+offset_bottom = 76.0
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

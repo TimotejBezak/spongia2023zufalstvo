@@ -1,0 +1,107 @@
+[gd_scene load_steps=5 format=3 uid="uid://c4o4utfw5kutf"]
+
+[ext_resource type="LabelSettings" uid="uid://ccw8fhlgo0xp0" path="res://hadanka_text.tres" id="1_2hfpb"]
+[ext_resource type="Script" path="res://hadanka.gd" id="1_rbu0h"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="3_1emsb"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_i65xv"]
+font_size = 40
+font_color = Color(1, 0, 0, 1)
+
+[node name="hadanka" type="Node2D"]
+script = ExtResource("1_rbu0h")
+
+[node name="otazka" type="Label" parent="."]
+offset_left = 300.0
+offset_top = 28.0
+offset_right = 880.0
+offset_bottom = 134.0
+label_settings = ExtResource("1_2hfpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 52.0
+offset_top = 144.0
+offset_right = 188.0
+offset_bottom = 280.0
+focus_mode = 0
+icon = ExtResource("3_1emsb")
+
+[node name="moznost1" type="Label" parent="Button1"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 146.0
+offset_right = 156.0
+offset_bottom = 219.0
+label_settings = ExtResource("1_2hfpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 338.0
+offset_top = 144.0
+offset_right = 474.0
+offset_bottom = 280.0
+focus_mode = 0
+icon = ExtResource("3_1emsb")
+
+[node name="moznost2" type="Label" parent="Button2"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 158.0
+offset_right = 146.0
+offset_bottom = 231.0
+label_settings = ExtResource("1_2hfpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 644.0
+offset_top = 145.0
+offset_right = 780.0
+offset_bottom = 281.0
+focus_mode = 0
+icon = ExtResource("3_1emsb")
+
+[node name="moznost3" type="Label" parent="Button3"]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 149.0
+offset_right = 134.0
+offset_bottom = 222.0
+label_settings = ExtResource("1_2hfpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 900.0
+offset_top = 144.0
+offset_right = 1036.0
+offset_bottom = 280.0
+focus_mode = 0
+icon = ExtResource("3_1emsb")
+
+[node name="moznost4" type="Label" parent="Button4"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 147.0
+offset_right = 147.0
+offset_bottom = 220.0
+label_settings = ExtResource("1_2hfpb")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="nespravne" type="Label" parent="."]
+offset_left = 54.0
+offset_top = 377.0
+offset_right = 506.0
+offset_bottom = 467.0
+label_settings = SubResource("LabelSettings_i65xv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="Button1" to="." method="_on_button_1_button_down"]
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
+[connection signal="button_down" from="Button4" to="." method="_on_button_4_button_down"]

@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://jrsahpk4b2np"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_malk5"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_xbke6"]
+[ext_resource type="PackedScene" uid="uid://cq6uwa4jvsi2x" path="res://sadenie.tscn" id="2_5gawg"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_385n3"]
+
+[node name="6" type="Node2D"]
+script = ExtResource("1_xbke6")
+obrazok_pozadie = "res://miestnosti/zahrada.png"
+kam_spet = 5
+
+[node name="basnicka" parent="." instance=ExtResource("2_385n3")]
+path = "res://videa/zahrada.wav"
+
+[node name="sadenie" parent="." instance=ExtResource("2_5gawg")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("1_malk5")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

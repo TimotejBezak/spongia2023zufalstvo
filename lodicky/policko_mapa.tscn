@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c23p37qt73uhd"]
+
+[ext_resource type="Texture2D" uid="uid://dp1b1swaqnyyw" path="res://osemsmerovka/default.png" id="1_8823v"]
+[ext_resource type="Script" path="res://lodicky/policko_mapa.gd" id="2_llmra"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_k13u6"]
+font_size = 40
+
+[node name="policko" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+focus_mode = 0
+icon = ExtResource("1_8823v")
+script = ExtResource("2_llmra")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 56.0
+offset_bottom = 55.0
+label_settings = SubResource("LabelSettings_k13u6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]

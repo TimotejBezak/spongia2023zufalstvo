@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://djrqgq8esyq8s"]
+
+[ext_resource type="Script" path="res://inventar.gd" id="1_1dhtj"]
+[ext_resource type="Texture2D" uid="uid://dgyndwr300nkh" path="res://grafika/ciernypixel.png" id="2_nwxko"]
+[ext_resource type="Texture2D" uid="uid://dvemu14dk47d0" path="res://grafika/tlacidlo_inventar.png" id="3_35i10"]
+
+[node name="inventar" type="Node2D"]
+script = ExtResource("1_1dhtj")
+
+[node name="veci" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="veci"]
+position = Vector2(1345.45, 150.006)
+rotation = 3.14159
+scale = Vector2(718.905, 262.011)
+texture = ExtResource("2_nwxko")
+
+[node name="GridContainer" type="GridContainer" parent="veci"]
+offset_left = 1011.45
+offset_top = 37.0064
+offset_right = 1051.45
+offset_bottom = 77.0064
+columns = 7
+
+[node name="zobrazit" type="Button" parent="."]
+offset_left = 1722.0
+offset_top = 50.0
+offset_right = 1887.0
+offset_bottom = 158.0
+focus_mode = 0
+toggle_mode = true
+icon = ExtResource("3_35i10")
+flat = true
+
+[connection signal="toggled" from="zobrazit" to="." method="_on_zobrazit_toggled"]

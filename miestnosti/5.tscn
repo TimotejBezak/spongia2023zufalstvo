@@ -1,0 +1,26 @@
+[gd_scene load_steps=6 format=3 uid="uid://3t0u3adgauj4"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_jeylo"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_trgys"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_xf06i"]
+[ext_resource type="PackedScene" uid="uid://dx5ddlemkgvku" path="res://varenie.tscn" id="3_4j14b"]
+[ext_resource type="PackedScene" uid="uid://dbc3ledxvgnqk" path="res://item_inventaru.tscn" id="3_anx3l"]
+
+[node name="5" type="Node2D"]
+script = ExtResource("1_trgys")
+obrazok_pozadie = "res://miestnosti/elixirovna.png"
+kam_dalej = Array[int]([6, 7])
+kam_spet = 1
+
+[node name="basnicka" parent="." instance=ExtResource("2_xf06i")]
+path = "res://videa/elixirovne.wav"
+
+[node name="varenie" parent="." instance=ExtResource("3_4j14b")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("1_jeylo")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]
+
+[node name="item_inventaru" parent="zbieracie_veci" instance=ExtResource("3_anx3l")]
+meno = "vec3"

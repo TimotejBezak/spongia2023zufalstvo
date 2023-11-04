@@ -1,0 +1,61 @@
+[gd_scene load_steps=8 format=3 uid="uid://7q1t7gbe5rk6"]
+
+[ext_resource type="PackedScene" uid="uid://dbc3ledxvgnqk" path="res://item_inventaru.tscn" id="1_4fbqx"]
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_ffxsq"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_ypshq"]
+[ext_resource type="PackedScene" uid="uid://b7ld5yuvhs0yl" path="res://pridavac.tscn" id="2_1rjfv"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_55v1v"]
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="5_n0jit"]
+[ext_resource type="Texture2D" uid="uid://d0hxidhahmhkj" path="res://grafika/itemy/prazdna_flasa.png" id="6_6ftcn"]
+
+[node name="1" type="Node2D"]
+script = ExtResource("1_ypshq")
+obrazok_pozadie = "res://miestnosti/pozadie1.png"
+kam_dalej = Array[int]([2, 5, 9, 12])
+
+[node name="basnicka" parent="." instance=ExtResource("2_55v1v")]
+path = "res://videa/priprava.wav"
+
+[node name="test" type="Node2D" parent="."]
+visible = false
+
+[node name="pridavac" parent="test" instance=ExtResource("2_1rjfv")]
+z_index = 1
+offset_left = 955.0
+offset_top = 606.0
+offset_right = 1013.0
+offset_bottom = 664.0
+
+[node name="miestnost" parent="." instance=ExtResource("1_ffxsq")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]
+
+[node name="item_inventaru" parent="zbieracie_veci" instance=ExtResource("1_4fbqx")]
+offset_left = 136.0
+offset_top = 376.0
+offset_right = 272.0
+offset_bottom = 512.0
+icon = ExtResource("5_n0jit")
+meno = "semienko"
+
+[node name="item_inventaru2" parent="zbieracie_veci" instance=ExtResource("1_4fbqx")]
+offset_left = 286.0
+offset_top = 569.0
+offset_right = 337.0
+offset_bottom = 677.0
+icon = ExtResource("6_6ftcn")
+meno = "prazdna flasa"
+
+[node name="item_inventaru3" parent="zbieracie_veci" instance=ExtResource("1_4fbqx")]
+offset_left = 614.0
+offset_top = 536.0
+offset_right = 672.0
+offset_bottom = 594.0
+meno = "lano"
+
+[node name="item_inventaru4" parent="zbieracie_veci" instance=ExtResource("1_4fbqx")]
+offset_left = 1203.0
+offset_top = 483.0
+offset_right = 1261.0
+offset_bottom = 541.0
+meno = "sada na cistenie"

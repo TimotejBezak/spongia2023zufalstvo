@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://bopt3lbfof8am"]
+
+[ext_resource type="Texture2D" uid="uid://bur2buqyt1tee" path="res://grafika/icon.svg" id="1_dib7h"]
+[ext_resource type="Script" path="res://test.gd" id="2_fbuws"]
+
+[node name="Button" type="Node2D"]
+script = ExtResource("2_fbuws")
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = 2
+position = Vector2(333, 256)
+rotation = 1.55509
+skew = -0.0453786
+
+[node name="Icon" type="Sprite2D" parent="Node2D"]
+position = Vector2(3.25107, -61.9154)
+rotation = -1.55509
+scale = Vector2(1, 1.57031)
+texture = ExtResource("1_dib7h")
+
+[node name="Icon" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(204, 159)
+texture = ExtResource("1_dib7h")

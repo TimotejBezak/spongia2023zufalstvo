@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://chsuf8ujpgd7m"]
+
+[ext_resource type="PackedScene" uid="uid://dp0ccj8iaqbkv" path="res://miestnosti/miestnost.tscn" id="1_qw7cv"]
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_y7ld3"]
+[ext_resource type="PackedScene" uid="uid://csc5nfmtfab1f" path="res://basnicka.tscn" id="2_exg5v"]
+[ext_resource type="PackedScene" uid="uid://cgcuond8jlow5" path="res://nahoda.tscn" id="2_vwtq3"]
+
+[node name="13" type="Node2D"]
+script = ExtResource("1_y7ld3")
+obrazok_pozadie = "res://miestnosti/bibliotheca.png"
+kam_dalej = Array[int]([14])
+kam_spet = 12
+
+[node name="basnicka" parent="." instance=ExtResource("2_exg5v")]
+path = "res://videa/nahoda.wav"
+
+[node name="nahoda" parent="." instance=ExtResource("2_vwtq3")]
+z_index = 1
+
+[node name="miestnost" parent="." instance=ExtResource("1_qw7cv")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

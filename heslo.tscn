@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://b68sixk6ns0dl"]
+
+[ext_resource type="Script" path="res://heslo.gd" id="1_px87u"]
+[ext_resource type="PackedScene" uid="uid://2dvyecl6fls8" path="res://krizovka/policko.tscn" id="2_i0ysf"]
+[ext_resource type="Texture2D" uid="uid://kti7o65y55rk" path="res://grafika/truhlica.png" id="2_phhia"]
+
+[node name="heslo" type="Node2D"]
+script = ExtResource("1_px87u")
+
+[node name="Truhlica" type="Sprite2D" parent="."]
+position = Vector2(959, 694)
+scale = Vector2(4.17587, 4.17587)
+texture = ExtResource("2_phhia")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 633.0
+offset_top = 728.0
+offset_right = 1689.0
+offset_bottom = 936.0
+scale = Vector2(0.624137, 0.624137)
+columns = 5
+
+[node name="policko" parent="GridContainer" instance=ExtResource("2_i0ysf")]
+layout_mode = 2
+
+[node name="policko2" parent="GridContainer" instance=ExtResource("2_i0ysf")]
+layout_mode = 2
+
+[node name="policko3" parent="GridContainer" instance=ExtResource("2_i0ysf")]
+layout_mode = 2
+
+[node name="policko4" parent="GridContainer" instance=ExtResource("2_i0ysf")]
+layout_mode = 2
+
+[node name="policko5" parent="GridContainer" instance=ExtResource("2_i0ysf")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+offset_left = 623.0
+offset_top = 195.0
+offset_right = 1277.0
+offset_bottom = 337.0
+
+[connection signal="stlacene" from="." to="." method="_on_stlacene"]
+[connection signal="mouse_entered" from="GridContainer" to="." method="_on_grid_container_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer" to="." method="_on_grid_container_mouse_exited"]

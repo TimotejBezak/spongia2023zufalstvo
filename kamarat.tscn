@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ke0bita2v3fj"]
+
+[ext_resource type="Script" path="res://kamarat.gd" id="1_07kol"]
+[ext_resource type="PackedScene" uid="uid://b7ld5yuvhs0yl" path="res://pridavac.tscn" id="2_0062r"]
+
+[node name="kamarat" type="Node2D" groups=["varenie"]]
+z_index = 1
+script = ExtResource("1_07kol")
+
+[node name="pridavac" parent="." instance=ExtResource("2_0062r")]
+offset_left = 210.0
+offset_top = 140.0
+offset_right = 268.0
+offset_bottom = 198.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 457.0
+offset_top = 82.0
+offset_right = 497.0
+offset_bottom = 105.0

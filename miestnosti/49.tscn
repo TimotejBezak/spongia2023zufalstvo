@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://csoip10diwwo4"]
+
+[ext_resource type="Script" path="res://miestnosti/miestnost.gd" id="1_x5p03"]
+[ext_resource type="PackedScene" uid="uid://hsua5yqt072m" path="res://miestnosti/miestnost.tscn" id="2_088cv"]
+
+[node name="2" type="Node2D"]
+script = ExtResource("1_x5p03")
+obrazok_pozadie = "res://miestnosti/pozadieles.png"
+kam_dalej = Array[int]([37, 39, 38])
+kam_spet = 36
+
+[node name="miestnost" parent="." instance=ExtResource("2_088cv")]
+
+[node name="zbieracie_veci" type="Node2D" parent="."]

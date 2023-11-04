@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbl7bdq34sqny"]
+
+[ext_resource type="Script" path="res://pamet/tlacidlo.gd" id="1_l6euc"]
+
+[node name="tlacidlo" type="Button" groups=["tlacidlo_farba"]]
+offset_right = 8.0
+offset_bottom = 8.0
+focus_mode = 0
+script = ExtResource("1_l6euc")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
